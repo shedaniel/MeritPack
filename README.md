@@ -26,14 +26,13 @@ Next, you must specify the entries to the plugin: (This is just an example)<br>
 ```java
 @EventHandler
 public void getMeritPackItems(MeritPackGetEntryEvent e) {
-	e.setEntries(Arrays.asList(new MeritEntry[]{
-			new MeritEntry(new ItemStack(Material.GOLD_NUGGET), 0.6f, new Runnable() {
-				@Override
-				public void run() {
-					//Random
-				}
-			})
-	}));
+  e.setEntries(Arrays.asList(new MeritEntry[]{
+      new MeritEntry(new ItemStack(Material.GOLD_NUGGET), 0.6f, new Runnable() {
+        @Override
+        public void run() {
+          //Random
+        })
+  }));
 }
 ```
 The entry should be like this:

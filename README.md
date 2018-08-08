@@ -14,7 +14,7 @@ You can cancel the event like this:
 ```java
 @EventHandler
 public void onPlayerOpenMeritPack(PlayerOpenMeritPackEvent e) {
-	if (randomFunction(e.getPlayer())) {
+  if (randomFunction(e.getPlayer())) {
     e.setCancelled(true);
     e.getPlayer().closeInventory();
     //You should add some messages like "Not enough coins" or idk to notify the player
